@@ -21,7 +21,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     license='MIT License',
-    url="https://github.com/abhijithneilabraham/Rflow",
+    url="https://github.com/nfflow/reflow",
     install_requires=install_requires,
     packages=setuptools.find_packages(),
     python_requires='>=3.6',
