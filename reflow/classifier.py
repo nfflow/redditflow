@@ -5,21 +5,22 @@ Created on Thu Nov 18 03:25:49 2021
 
 @author: abhijithneilabraham
 """
-from transformers import pipeline
-import numpy as np
+from sentence_transformers import SentenceTransformer, util
 
 class Classify:
-    def __init__(self,model="valhalla/distilbart-mnli-12-6"):
-        self.generator=pipeline("zero-shot-classification",model=model)
-    def return_tag(self,textlist,labels):
-        labels=labels+",other" # to add "other" to the classes, to avoid bias in prediction
-        out={"text":[],"label":[]}
-        for text in textlist:
-            res=self.generator(text,labels)
-            max_index=np.argmax(res["scores"])
-            out_label= res["labels"][max_index] if res["scores"][max_index] >0.5 else None
-            if out_label and out_label!="other":
-                out["text"].append(text)
-                out["label"].append(out_label)
-        return out
+    def __init__(self,model="paraphrase-multilingual-MiniLM-L12-v2"):
+        self.model = SentenceTransformer(model)
         
+    def return_tag(self,textlist,labels,threshold_cosine_score=0.5):
+        text_embeds = self.model.encode(textlist, convert_to_tensor=True)
+        label_embeds = self.model.encode(labels, convert_to_tensor=True)
+        cosine_scores = util.pytorch_cos_sim(label_embeds, text_embeds)
+        text=[]
+        classes=[]
+        for index in range(len(cosine_scores)):
+            for i in range(len(textlist)):
+                if cosine_scores[index][i]>threshold_cosine_score:
+                    text.append(textlist[i])
+                    classes.append(labels[index])
+        return {"text":text,"label":classes}
+    

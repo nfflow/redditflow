@@ -11,7 +11,7 @@ import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-install_requires = ["transformers"]
+install_requires = ["sentence_transformers"]
 setuptools.setup(
     name="rflow", # Replace with your own username
     version="0.0.1",
