@@ -1,20 +1,12 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Oct 13 18:30:36 2021
-
-@author: abhijithneilabraham
-"""
-
 import setuptools
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-install_requires = ["sentence_transformers"]
+install_requires = ["sentence_transformers", "praw"]
 setuptools.setup(
-    name="rflow", # Replace with your own username
-    version="0.0.1",
+    name="reflow",
+    version="0.0.2",
     author="Abhijith Neil Abraham",
     author_email="abhijithneilabrahampk@gmail.com",
     description="Data Curation over Time",
