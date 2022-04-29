@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Nov 13 23:25:18 2021
-
-@author: abhijithneilabraham
-"""
-
 import os
 import re
 import requests
