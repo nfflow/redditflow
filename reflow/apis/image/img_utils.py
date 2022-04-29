@@ -1,7 +1,7 @@
-from reflow.image_search import redditImageScraper, ImageSearch
+from ...image_search import redditImageScraper, ImageSearch
 from datetime import datetime
 import os
-from reflow import SubredditSearch
+from ...text_search import SubredditSearch
 
 
 def scrape_images(config, image_datastore_dir):

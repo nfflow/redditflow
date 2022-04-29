@@ -1,6 +1,6 @@
 import pandas as pd
 from datetime import datetime
-from reflow import RedditScraper, SubredditSearch
+from ...text_search import RedditScraper, SubredditSearch
 import os
 
 
