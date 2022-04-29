@@ -1,2 +1,2 @@
-from .apis.image import ImageApi
-from .apis.text import TextApi
+from .apis.image.ImageApi import ImageApi
+from .apis.text.TextApi import TextApi
