@@ -4,7 +4,7 @@ import os
 from reflow import SubredditSearch
 
 
-def scrape_images(config, image_datastore_dir="image_datastore"):
+def scrape_images(config, image_datastore_dir):
 
     if "subreddit_search_term" in config.keys() and "subreddits" in config.keys():
         raise AttributeError(
