@@ -17,7 +17,7 @@ start_time | DateTime | Start date and time in dd.mm.yy hh.mm.ss format
 stop_time | DateTime | Stop date and time in dd.mm.yy hh.mm.ss format
 subreddit_search_term | str | Input search term to create filtered outputs
 subreddit_object_type | str | Available options for scraping are `submission` and `comment`
-
+resume_task_timestamp | str, Optional | If task gets interrupted, the timestamp information available from the created folder names can be used to resume.
 ## Example
 
 ### Text Scraping and filtering
@@ -30,7 +30,7 @@ config = {
         "end_time": "27.03.2022 11:38:42",
         "subreddit_search_term": "healthcare",
         "subreddit_object_type": "comment",
-        # "resume_task_timestamp":1648613439
+         "resume_task_timestamp":1648613439
     }
 from reflow import TextApi
 TextApi(config)
