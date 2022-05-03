@@ -6,17 +6,26 @@ Scrape data from reddit over a period of time of your choice, filter with AI ass
 ## Installation.  
 `pip install reflow`
 
-## Docs
-  
-  
+## Docs.  
+### Text API.  
+Argument | Input | Description
+--------- | ------- | -----------  
+sort_by | str | Sort the results by available options like 'best', 'new' ,'top', 'controversial' , etc as available from Reddit.
+subreddit_text_limit | int | Number of rows to be scraped per subreddit
+total_limit | int | Total number of rows to be scraped
+start_time | DateTime | Start date and time in dd.mm.yy hh.mm.ss format
+stop_time | DateTime | Stop date and time in dd.mm.yy hh.mm.ss format
+subreddit_search_term | str | Input search term to create filtered outputs
+subreddit_object_type | str | Available options for scraping are `submission` and `comment`
+
 ## Example
 
 ### Text Scraping and filtering
 ```
 config = {
         "sort_by": "best",
+         "subreddit_text_limit": 50,
         "total_limit": 200,
-        "subreddit_text_limit": 50,
         "start_time": "27.03.2021 11:38:42",
         "end_time": "27.03.2022 11:38:42",
         "subreddit_search_term": "healthcare",
