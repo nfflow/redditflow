@@ -1,4 +1,4 @@
 .DS_Store
 build/*
 dist/*
-rflow.egg-info/*
+redditflow.egg-info/*
