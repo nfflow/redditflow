@@ -1,4 +1,4 @@
-# Reflow. 
+# Redditflow. 
 
 ## Mission.
 Scrape data from reddit over a period of time of your choice, filter with AI assistants, and connect it to your ML pipelines!
@@ -9,7 +9,7 @@ Execution is as simple as this:
 * Run the API in a single line with the config passed as input.
 
 ## Installation.  
-`pip install reflow`
+`pip install redditflow`
 
 ## Docs.  
 ### 1) Text API.  
@@ -53,7 +53,7 @@ config = {
         "subreddit_object_type": "comment",
          "resume_task_timestamp":1648613439
     }
-from reflow import TextApi
+from redditflow import TextApi
 TextApi(config)
 ```
 ### Image Scraping and filtering
@@ -71,7 +71,7 @@ config = {
          "client_secret": $CLIENT_SECRET, #get client secret for praw
          }
 
-from reflow import ImageApi
+from redditflow import ImageApi
 ImageApi(config)
 
 ```
