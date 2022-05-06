@@ -25,7 +25,7 @@ class ContrastiveTensionTrainer:
             self.model_name, max_seq_length=self.max_seq_length
             )
         pooling_model = models.Pooling(
-            self.word_embedding_model.get_word_embedding_dimension())
+            word_embedding_model.get_word_embedding_dimension())
 
         self.model = SentenceTransformer(modules=[word_embedding_model,
                                                   pooling_model],
