@@ -1,6 +1,7 @@
 from .txt_utils import scrape_data, sort_scraped
 from ...text_search import Classify
 from ...text_search.trainer import ContrastiveTensionTrainer
+import os
 
 
 class TextApi:
@@ -14,4 +15,8 @@ class TextApi:
             model_name = ml_config['model_name']
             model_output_path = ml_config['model_output_path']
 
-            ContrastiveTensionTrainer(model_name, model_output_path)
+            trainer = ContrastiveTensionTrainer(model_name,
+                                                model_output_path)
+
+            trainer.train(data_path=os.path.join(
+                save_timestamp, 'scraped_classified.json'))
