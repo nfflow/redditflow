@@ -44,7 +44,7 @@ class ContrastiveTensionTrainer:
         model = self.model
         model_output_path = self.model_output_path
 
-        data = pd.read_json(data_path)
+        data = pd.read_json(data_path, lines=True)
         train_sentences = data["text"]
         train_dataloader = losses.ContrastiveTensionDataLoader(
             train_sentences, batch_size=self.batch_size,
@@ -62,6 +62,6 @@ class ContrastiveTensionTrainer:
                   weight_decay=weight_decay,
                   scheduler=scheduler,
                   checkpoint_path=model_output_path,
-                  show_progress_bar=show_progress_bar(),
+                  show_progress_bar=show_progress_bar,
                   use_amp=use_amp
                   )
