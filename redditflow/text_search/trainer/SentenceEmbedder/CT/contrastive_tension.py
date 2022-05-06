@@ -4,15 +4,16 @@ from sentence_transformers import SentenceTransformer
 import pandas as pd
 
 
-class ContrastiveTension:
+class ContrastiveTensionTrainer:
     def __init__(self,
                  model_name,
-                 batch_size,
-                 pos_neg_ratio,
-                 num_epochs,
-                 max_seq_length,
                  model_output_path,
+                 batch_size=16,
+                 pos_neg_ratio=8,
+                 num_epochs=1,
+                 max_seq_length=75,
                  device='cuda:0'):
+
         self.model_name = model_name
         self.batch_size = batch_size
         self.pos_neg_ratio = pos_neg_ratio
