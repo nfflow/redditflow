@@ -12,7 +12,7 @@ class ContrastiveTensionTrainer:
                  pos_neg_ratio=8,
                  num_epochs=1,
                  max_seq_length=75,
-                 device='cuda:0'):
+                 device=None):
 
         self.model_name = model_name
         self.batch_size = batch_size
