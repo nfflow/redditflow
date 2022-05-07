@@ -35,6 +35,8 @@ class redditImageScraper:
             submissions = self.reddit.subreddit(self.sub).top(limit=None)
         elif self.order == 'new':
             submissions = self.reddit.subreddit(self.sub).new(limit=None)
+        elif self.order == 'best':
+            submissions = self.reddit.subreddit(self.sub).best(limit=None)
 
         for submission in submissions:
             if not submission.stickied and submission.over_18 == self.nsfw \
