@@ -26,6 +26,12 @@ subreddit_object_type | str | Available options for scraping are `submission` an
 resume_task_timestamp | str, Optional | If task gets interrupted, the timestamp information available from the created folder names can be used to resume.
 ml_pipeline | Dict, Optional | If an ML pipeline needs to be connected at the end, to have a trained model, specify this parameter
 
+#### ML pipeline arguments
+The ML pipeline dict can have the following arguments.
+
+model_name | str | path to pre-trained model name(Currently from Sentence Transformers (https://www.sbert.net/) hub.
+model_output_path | str | path to the model_output
+
 ### 2) Image API
 
 Argument | Input | Description
