@@ -26,12 +26,17 @@ stop_time | DateTime | Stop date and time in dd.mm.yy hh.mm.ss format
 subreddit_search_term | str | Input search term to create filtered outputs
 subreddit_object_type | str | Available options for scraping are `submission` and `comment`. 
 resume_task_timestamp | str, Optional | If task gets interrupted, the timestamp information available from the created folder names can be used to resume.
-ml_pipeline | Dict, Optional | If an ML pipeline needs to be connected at the end, to have a trained model, specify this parameter
+ml_pipeline | Dict, Optional | If an ML pipeline needs to be connected at the end, to have a trained model, specify this parameter. [How to specify ML pipeline arguments](#ML-Pipeline-Arguments)
+
+
+
 
 #### ML pipeline arguments
 The ML pipeline dict can have the following arguments.
 
-model_name | str | path to pre-trained model name(Currently from Sentence Transformers (https://www.sbert.net/) hub.
+Argument | Input | Description
+--------- | ------- | -----------  
+model_name | str | path to pre-trained model name(Currently from Sentence Transformers (https://www.sbert.net/) hub.   
 model_output_path | str | path to the model_output
 
 ### 2) Image API
