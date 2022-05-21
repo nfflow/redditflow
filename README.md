@@ -1,6 +1,6 @@
 # Redditflow. 
 
-[View on huggingface hub!](https://huggingface.co/NFflow)
+[View our example models on huggingface hub!](https://huggingface.co/NFflow)
 
 ## Mission.
 Scrape data from reddit over a period of time of your choice, filter with AI assistants, and connect it to your ML pipelines!
