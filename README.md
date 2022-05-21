@@ -64,8 +64,7 @@ config = {
         "start_time": "27.03.2021 11:38:42",
         "end_time": "27.03.2022 11:38:42",
         "subreddit_search_term": "healthcare",
-        "subreddit_object_type": "comment",
-         "resume_task_timestamp":1648613439
+        "subreddit_object_type": "comment"
     }
 from redditflow import TextApi
 TextApi(config)
