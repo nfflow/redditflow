@@ -1,5 +1,7 @@
 # Redditflow. 
 
+[View our example models on huggingface hub!](https://huggingface.co/NFflow)
+
 ## Mission.
 Scrape data from reddit over a period of time of your choice, filter with AI assistants, and connect it to your ML pipelines!
 
@@ -24,7 +26,18 @@ stop_time | DateTime | Stop date and time in dd.mm.yy hh.mm.ss format
 subreddit_search_term | str | Input search term to create filtered outputs
 subreddit_object_type | str | Available options for scraping are `submission` and `comment`. 
 resume_task_timestamp | str, Optional | If task gets interrupted, the timestamp information available from the created folder names can be used to resume.
-ml_pipeline | Dict, Optional | If an ML pipeline needs to be connected at the end, to have a trained model, specify this parameter
+ml_pipeline | Dict, Optional | If an ML pipeline needs to be connected at the end, to have a trained model, specify this parameter. [How to specify ML pipeline arguments](#ML-Pipeline-Arguments)
+
+
+
+
+#### ML pipeline arguments
+The ML pipeline dict can have the following arguments.
+
+Argument | Input | Description
+--------- | ------- | -----------  
+model_name | str | path to pre-trained model name(Currently from Sentence Transformers (https://www.sbert.net/) hub.   
+model_output_path | str | path to the model_output
 
 ### 2) Image API
 
@@ -51,8 +64,7 @@ config = {
         "start_time": "27.03.2021 11:38:42",
         "end_time": "27.03.2022 11:38:42",
         "subreddit_search_term": "healthcare",
-        "subreddit_object_type": "comment",
-         "resume_task_timestamp":1648613439
+        "subreddit_object_type": "comment"
     }
 from redditflow import TextApi
 TextApi(config)
