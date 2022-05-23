@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 install_requires = ["sentence_transformers", "praw"]
 setuptools.setup(
     name="redditflow",
-    version="0.1.0",
+    version="0.1.1",
     author="Abhijith Neil Abraham",
     author_email="abhijithneilabrahampk@gmail.com",
     description="Data Curation over Time",
