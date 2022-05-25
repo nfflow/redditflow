@@ -64,7 +64,8 @@ config = {
         "start_time": "27.03.2021 11:38:42",
         "end_time": "27.03.2022 11:38:42",
         "subreddit_search_term": "healthcare",
-        "subreddit_object_type": "comment"
+        "subreddit_object_type": "comment",
+        "ml_pipeline": {""ml_pipeline":{"model_name":'distilbert-base-uncased','model_output_path':'healthcare_27.03.2021-27.03.2022_redditflow"}
     }
 from redditflow import TextApi
 TextApi(config)
