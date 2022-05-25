@@ -55,7 +55,7 @@ client_secret | str | Praw client secret.
 
 ## Examples
 
-### Text Scraping and filtering
+### Text data collection and training a model in the end.
 ```
 config = {
         "sort_by": "best",
@@ -70,7 +70,7 @@ config = {
 from redditflow import TextApi
 TextApi(config)
 ```
-### Image Scraping and filtering
+### Image data collection
 
 ```
 config = {
