@@ -1,6 +1,8 @@
 # Redditflow. 
 
-[View our example models on huggingface hub!](https://huggingface.co/NFflow)
+Huggingface-hub - [View our example models on huggingface hub!](https://huggingface.co/NFflow)   
+Blog - [Read a short blog about our mission and how redditflow works!](https://dev.to/abhijithneilabraham/redditflow-find-data-from-any-timeline-from-past-to-future-and-feed-your-ml-pipelines-jnh)
+
 
 ## Mission.
 Scrape data from reddit over a period of time of your choice, filter with AI assistants, and connect it to your ML pipelines!
@@ -90,6 +92,7 @@ ImageApi(config)
 
 ```
 
+Since the image api requires praw api from python, a praw `client_id` and `client_secret` are required. [Read here](https://www.geeksforgeeks.org/how-to-get-client_id-and-client_secret-for-python-reddit-api-registration/) about how to get client id and client secret for praw.
 
 
 
