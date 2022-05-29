@@ -14,6 +14,8 @@ Execution is as simple as this:
 
 ## Installation.  
 `pip install redditflow`
+### Latest installation from source.  
+`pip install git+https://github.com/nfflow/redditflow`
 
 ## Docs.  
 ### 1) Text API.  
