@@ -1,11 +1,14 @@
 # Redditflow. 
 
 Huggingface-hub - [View our example models on huggingface hub!](https://huggingface.co/NFflow)   
-Blog - [Read a short blog about our mission and how redditflow works!](https://dev.to/abhijithneilabraham/redditflow-find-data-from-any-timeline-from-past-to-future-and-feed-your-ml-pipelines-jnh)
+Blog - [Read a short blog about our mission and how redditflow works!](https://dev.to/abhijithneilabraham/redditflow-find-data-from-any-timeline-from-past-to-future-and-feed-your-ml-pipelines-jnh).  
+
+Join our discussions in Discord! [Join by clicking here](https://discord.gg/8u362Yc3)
+
 
 
 ## Mission.
-Scrape data from reddit over a period of time of your choice, filter with AI assistants, and connect it to your ML pipelines!
+Do everything from data collection from reddit to training a machine learning model in just two lines of python code!   
 
 Execution is as simple as this: 
 
