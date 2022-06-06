@@ -1,6 +1,6 @@
 from .txt_utils import scrape_data, sort_scraped
 from ...text_search import Classify
-
+from ...text_search.trainer import ModelSelect
 import os
 from datetime import datetime
 import time
@@ -34,12 +34,15 @@ class TextApi:
             ml_config = config['ml_pipeline']
             model_name = ml_config['model_name']
             model_output_path = ml_config['model_output_path']
-            if not 'model_architecture' in ml_config.keys():
-                from ...text_search.trainer import ContrastiveTensionTrainer
-                trainer = ContrastiveTensionTrainer(model_name,
-                                                    model_output_path)
+
+            if 'model_architecture' in ml_config.keys():
+                model_architecture = ml_config['model_architecture']
+                if 'CT' in model_architecture:
+                    trainer = ModelSelect(model_name,
+                                          model_output_path).return_trainer()
             else:
-                if 
+                trainer = ModelSelect(model_name,
+                                      model_output_path).return_trainer()
 
             trainer.train(data_path=os.path.join(
                 save_timestamp, 'scraped_classified.json'))
