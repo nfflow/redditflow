@@ -10,6 +10,11 @@ Join our discussions in Discord! [Join by clicking here](https://discord.gg/8u36
 ## Mission.
 Do everything from data collection from reddit to training a machine learning model in just two lines of python code!   
 
+Supports:
+
+- Text Data
+- Image Data
+
 Execution is as simple as this: 
 
 * Make a config file with your required details of input.
