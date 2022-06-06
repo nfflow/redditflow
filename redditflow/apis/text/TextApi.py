@@ -1,6 +1,6 @@
 from .txt_utils import scrape_data, sort_scraped
 from ...text_search import Classify
-from ...text_search.trainer import ContrastiveTensionTrainer
+from ...text_search.trainer import ModelSelect
 import os
 from datetime import datetime
 import time
@@ -20,7 +20,8 @@ class TextApi:
                     time.sleep(300)
                     new_endtime = newtime + 300
                     config['end_time'] = new_endtime
-                    print('starting Cron Job for scraping data from your future......')
+                    print('''starting Cron Job
+                          for scraping data from your future......''')
                     data, save_timestamp = scrape_data(config)
                     classifier = Classify()
                     sort_scraped(config, classifier, data, save_timestamp)
@@ -34,8 +35,14 @@ class TextApi:
             model_name = ml_config['model_name']
             model_output_path = ml_config['model_output_path']
 
-            trainer = ContrastiveTensionTrainer(model_name,
-                                                model_output_path)
+            if 'model_architecture' in ml_config.keys():
+                model_architecture = ml_config['model_architecture']
+                if 'CT' in model_architecture:
+                    trainer = ModelSelect(model_name,
+                                          model_output_path).return_trainer()
+            else:
+                trainer = ModelSelect(model_name,
+                                      model_output_path).return_trainer()
 
             trainer.train(data_path=os.path.join(
                 save_timestamp, 'scraped_classified.json'))

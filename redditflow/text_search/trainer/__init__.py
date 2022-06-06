@@ -1,1 +1,2 @@
 from .SentenceEmbedder.CT.contrastive_tension import ContrastiveTensionTrainer
+from .SentenceEmbedder.model_select import ModelSelect
