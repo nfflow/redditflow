@@ -69,36 +69,49 @@ client_secret | str | Praw client secret.
 
 ### Text data collection and training a model in the end.
 ```
+from redditflow import TextApi
+
+
 config = {
         "sort_by": "best",
-         "subreddit_text_limit": 50,
+        "subreddit_text_limit": 50,
         "total_limit": 200,
         "start_time": "27.03.2021 11:38:42",
         "end_time": "27.03.2022 11:38:42",
         "subreddit_search_term": "healthcare",
         "subreddit_object_type": "comment",
-        "ml_pipeline": {""ml_pipeline":{"model_name":'distilbert-base-uncased','model_output_path':'healthcare_27.03.2021-27.03.2022_redditflow"}
+        "ml_pipeline": {
+            'model_name': 'distilbert-base-uncased',
+            'model_output_path': 'healthcare_27.03.2021-27.03.2022_redditflow',
+            'model_architecture': 'CT'
+            }
     }
-from redditflow import TextApi
+
+
 TextApi(config)
+
+
 ```
 ### Image data collection
 
 ```
+from redditflow import ImageApi
+
+
 config = {
         "sort_by": "best",
         "subreddit_image_limit": 3,
         "total_limit": 10,
-         "start_time": "13.11.2021 09:38:42",
-         "end_time": "15.11.2021 11:38:42",
-         "subreddit_search_term": "cats",
-         "subreddit_object_type": "comment",
-         "client_id": "$CLIENT_ID", # get client id for praw
-         "client_secret": $CLIENT_SECRET, #get client secret for praw
+        "start_time": "13.11.2021 09:38:42",
+        "end_time": "15.11.2021 11:38:42",
+        "subreddit_search_term": "cats",
+        "subreddit_object_type": "comment",
+        "client_id": "$CLIENT_ID",  # get client id for praw
+        "client_secret": '$CLIENT_SECRET',  # get client secret for praw
          }
 
-from redditflow import ImageApi
 ImageApi(config)
+
 
 ```
 
