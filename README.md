@@ -3,7 +3,7 @@
 Huggingface-hub - [View our example models on huggingface hub!](https://huggingface.co/NFflow)   
 Blog - [Read a short blog about our mission and how redditflow works!](https://dev.to/abhijithneilabraham/redditflow-find-data-from-any-timeline-from-past-to-future-and-feed-your-ml-pipelines-jnh).  
 
-Join our discussions in Discord! [Join by clicking here](https://discord.gg/8u362Yc3)
+Join our discussions in Discord! [Join by clicking here](https://discord.gg/8JSx2THB45)
 
 
 
