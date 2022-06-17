@@ -10,8 +10,8 @@ class ModelSelect:
         model_architecture = self.model_architecture
         model_name = self.model_name
         model_output_path = self.model_output_path
-        if model_architecture == 'CT':
-            from .CT import ContrastiveTensionTrainer
+        if model_architecture.lower() == 'ct':
+            from .ct import ContrastiveTensionTrainer
             trainer = ContrastiveTensionTrainer(model_name,
                                                 model_output_path)
             return trainer
