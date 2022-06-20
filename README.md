@@ -1,15 +1,31 @@
 # Redditflow. 
 
-Huggingface-hub - [View our example models on huggingface hub!](https://huggingface.co/NFflow)   
-Blog - [Read a short blog about our mission and how redditflow works!](https://dev.to/abhijithneilabraham/redditflow-find-data-from-any-timeline-from-past-to-future-and-feed-your-ml-pipelines-jnh).  
+<div align="center">
 
-Join our discussions in Discord! [Join by clicking here](https://discord.gg/8JSx2THB45)
+<img src="./misc/redditflow.jpeg" width="25%" height="25%" width="400px">
+
+**Do everything from data collection from reddit to training a machine learning model in just two lines of python code!  **
+
+______________________________________________________________________
+
+<p align="center">
+  <a href="https://www.nfflow.com/">Website</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#docs">Docs</a> •
+  <a href="https://huggingface.co/NFflow">Huggingface Hub</a> •
+  <a href="https://huggingface.co/NFflow](https://dev.to/abhijithneilabraham/redditflow-find-data-from-any-timeline-from-past-to-future-and-feed-your-ml-pipelines-jnh)">Blog</a> •
+     
+</p>
 
 
+[![PyPI Status](https://badge.fury.io/py/redditflow.svg)](https://badge.fury.io/py/redditflow)
+[![Downloads](https://pepy.tech/badge/redditflow)](https://pepy.tech/project/redditflow)
 
-## Mission.
-Do everything from data collection from reddit to training a machine learning model in just two lines of python code!   
+[![Discord](https://img.shields.io/discord/982008844261658726)](https://discord.gg/8JSx2THB45)
+[![license](https://img.shields.io/pypi/l/redditflow)](https://github.com/nfflow/redditflow/blob/master/LICENSE)
 
+</div>
+   
 Supports:
 
 - Text Data
