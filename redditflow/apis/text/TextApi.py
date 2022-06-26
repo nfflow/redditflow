@@ -37,9 +37,11 @@ class TextApi:
 
             if 'model_architecture' in ml_config.keys():
                 model_architecture = ml_config['model_architecture']
-                if 'CT' in model_architecture:
-                    trainer = ModelSelect(model_name,
-                                          model_output_path).return_trainer()
+                trainer = ModelSelect(model_name,
+                                      model_output_path,
+                                      model_architecture=model_architecture
+                                      ).return_trainer()
+
             else:
                 trainer = ModelSelect(model_name,
                                       model_output_path).return_trainer()
