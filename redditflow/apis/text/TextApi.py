@@ -1,6 +1,6 @@
 from .txt_utils import scrape_data, sort_scraped
 from ...text_search import Classify
-from ...text_search.trainer import ModelSelect
+from nfmodelapis.text.SentenceEmbedder import ModelSelect
 import os
 from datetime import datetime
 import time
