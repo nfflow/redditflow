@@ -11,7 +11,7 @@ ______________________________________________________________________
 <p align="center">
   <a href="https://www.nfflow.com/">Website</a> •
   <a href="#installation">Installation</a> •
-  <a href="#docs">Docs</a> •
+  <a href="https://github.com/nfflow/redditflow/tree/main/docs">Docs</a> •
   <a href="https://huggingface.co/NFflow">Huggingface Hub</a> •
   <a href="https://huggingface.co/NFflow](https://dev.to/abhijithneilabraham/redditflow-find-data-from-any-timeline-from-past-to-future-and-feed-your-ml-pipelines-jnh)">Blog</a> •
      
