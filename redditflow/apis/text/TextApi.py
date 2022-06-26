@@ -1,6 +1,6 @@
 from .txt_utils import scrape_data, sort_scraped
 from ...text_search import Classify
-from ...text_search.trainer import ModelSelect
+from nfmodelapis.text.SentenceEmbedder import ModelSelect
 import os
 from datetime import datetime
 import time
@@ -37,12 +37,16 @@ class TextApi:
 
             if 'model_architecture' in ml_config.keys():
                 model_architecture = ml_config['model_architecture']
-                if 'CT' in model_architecture:
-                    trainer = ModelSelect(model_name,
-                                          model_output_path).return_trainer()
+                trainer = ModelSelect(model_name,
+                                      model_output_path,
+                                      model_architecture=model_architecture
+                                      ).return_trainer()
+
             else:
                 trainer = ModelSelect(model_name,
                                       model_output_path).return_trainer()
+            if 'resume_task_timestamp' in config.keys():
+                save_timestamp = config['resume_task_timestamp']
 
             trainer.train(data_path=os.path.join(
                 save_timestamp, 'scraped_classified.json'))

@@ -3,10 +3,11 @@ import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-install_requires = ["sentence_transformers", "praw"]
+install_requires = ["sentence_transformers", "praw", "transformers",
+                    "nfmodelapis"]
 setuptools.setup(
     name="redditflow",
-    version="0.1.1",
+    version="1.0.0",
     author="Abhijith Neil Abraham",
     author_email="abhijithneilabrahampk@gmail.com",
     description="Data Curation over Time",
