@@ -20,7 +20,7 @@ ______________________________________________________________________
 
 [![PyPI Status](https://badge.fury.io/py/redditflow.svg)](https://badge.fury.io/py/redditflow)
 [![Downloads](https://pepy.tech/badge/redditflow)](https://pepy.tech/project/redditflow)
-
+![Build Status](https://github.com/nfflow/redditflow/actions/workflows/build.yml/badge.svg)
 [![Discord](https://img.shields.io/discord/982008844261658726)](https://discord.gg/8JSx2THB45)
 [![license](https://img.shields.io/pypi/l/redditflow)](https://github.com/nfflow/redditflow/blob/master/LICENSE)
 
