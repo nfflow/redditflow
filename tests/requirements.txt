@@ -1,4 +1,5 @@
 sentence_transformers
 praw
 transformers  
+pandas
 nfmodelapis
