@@ -4,6 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 install_requires = ["sentence_transformers", "praw", "transformers",
+                    "pandas",
                     "nfmodelapis"]
 setuptools.setup(
     name="redditflow",
