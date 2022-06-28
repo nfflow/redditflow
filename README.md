@@ -93,6 +93,7 @@ ImageApi(config)
 ```
 
 Since the image api requires praw api from python, a praw `client_id` and `client_secret` are required. [Read here](https://www.geeksforgeeks.org/how-to-get-client_id-and-client_secret-for-python-reddit-api-registration/) about how to get client id and client secret for praw.
+   
+# Citation. 
 
-
-
+If you use our work, please cite the software in the url: https://github.com/nfflow/redditflow
