@@ -8,6 +8,7 @@ install_requires = ["numpy",
                     "praw",
                     "transformers",
                     "pandas",
+                    "setuptools_rust",
                     "nfmodelapis"]
 setuptools.setup(
     name="redditflow",

@@ -38,6 +38,5 @@ jobs:
     - name: Test with pytest
       run: |
         pip install --upgrade pip
-        pip install setuptools-rust
         python setup.py install
         pytest tests/test_import.py
