@@ -1,0 +1,4 @@
+sentence_transformers
+praw
+transformers  
+nfmodelapis
