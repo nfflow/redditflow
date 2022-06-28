@@ -15,7 +15,7 @@ ml_pipeline | Dict, Optional | If an ML pipeline needs to be connected at the en
 
 
 
-#### ML pipeline arguments
+# ML pipeline arguments
 The ML pipeline dict can have the following arguments.
 
 Argument | Input | Description
@@ -25,6 +25,6 @@ model_output_path | str | path to the model_output.
 model_architecture | str | Model Architecture name. Default 'CT'.   
 
 
-#### Model Architecture Reference
+# Model Architecture Reference
 
 Check out the available model architectures [here](https://github.com/nfflow/nfmodelapis/blob/main/docs/ModelArchitectures.md)
