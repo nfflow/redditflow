@@ -9,5 +9,6 @@ start_time | DateTime | Start date and time in dd.mm.yy hh.mm.ss format
 stop_time | DateTime | Stop date and time in dd.mm.yy hh.mm.ss format
 subreddit_search_term | str | Input search term to create filtered outputs
 subreddit_object_type | str | Available options for scraping are `submission` and `comment`
+user_agent | str | "dummy" as dummy string
 client_id | str | Since Image API requires praw, the config requires a praw client ID.
 client_secret | str | Praw client secret. 
