@@ -83,6 +83,7 @@ config = {
         "end_time": "15.11.2021 11:38:42",
         "subreddit_search_term": "cats",
         "subreddit_object_type": "comment",
+        "user_agent": "dummy",
         "client_id": "$CLIENT_ID",  # get client id for praw
         "client_secret": '$CLIENT_SECRET',  # get client secret for praw
          }
