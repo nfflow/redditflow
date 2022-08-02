@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 
 
 class redditImageScraper:
-    def __init__(self, sub, limit, order, client_id, client_secret, user_agent, nsfw=False, img_datastore="images"):
+    def __init__(self, sub, limit, order, client_id, client_secret, user_agent=None, nsfw=False, img_datastore="images"):
         config = configparser.ConfigParser()
         config.read('conf.ini')
         self.sub = sub
