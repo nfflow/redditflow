@@ -34,7 +34,7 @@ Supports:
 Execution is as simple as this: 
 
 * Make a config file with your required details of input.
-* Run the API in a single line with the config passed as input.
+* Run the [API](https://www.scaler.com/topics/api-full-form/) in a single line with the config passed as input.
 
 ## Installation.  
 `pip install redditflow`
