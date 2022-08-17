@@ -14,6 +14,9 @@ def scrape_images(config, image_datastore_dir):
         raise AttributeError(
             "Add either 'subreddit_search_term' or 'subreddits' to config")
 
+    if 'user_agent' not in config.keys():
+        config['user_agent'] = "redditflow"
+
     object_type = config["subreddit_object_type"]
 
     if 'start_time' in config.keys():
