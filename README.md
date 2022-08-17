@@ -50,7 +50,7 @@ from redditflow import TextApi
 
 
 config = {
-        "sort_by": "best",
+        "sort_by": "top",
         "subreddit_text_limit": 50,
         "total_limit": 200,
         "start_time": "27.03.2021 11:38:42",
@@ -76,7 +76,7 @@ from redditflow import ImageApi
 
 
 config = {
-        "sort_by": "best",
+        "sort_by": "top",
         "subreddit_image_limit": 3,
         "total_limit": 10,
         "start_time": "13.11.2021 09:38:42",
