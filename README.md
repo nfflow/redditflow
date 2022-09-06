@@ -24,6 +24,7 @@ ______________________________________________________________________
 [![Discord](https://img.shields.io/discord/982008844261658726)](https://discord.gg/8JSx2THB45)
 [![license](https://img.shields.io/pypi/l/redditflow)](https://github.com/nfflow/redditflow/blob/master/LICENSE)
 
+
 </div>
    
 Supports:
@@ -97,3 +98,13 @@ Since the image api requires praw api from python, a praw `client_id` and `clien
 # Citation. 
 
 If you use our work, please cite the software in the url: https://github.com/nfflow/redditflow
+
+
+
+## Launching nfflow Rewards
+ Contributed to nfflow? Here is a big thank you from our community to you.
+ Claim your badge and showcase them with pride.
+ Let us inspire more folks !
+
+ ![nfflow Badges](https://aviyel.com/assets/uploads/rewards/share/project/46/512/share.png)
+ ### **[Claim Now!](https://aviyel.com/projects/46/nfflow/rewards)**
