@@ -1,0 +1,16 @@
+# Use Alpine Linux as the base image
+FROM alpine:latest
+
+# Install necessary packages (Modify this if needed)
+RUN apk update && apk add python3
+
+# Create a working directory
+WORKDIR /app
+
+# Copy the Python script into the Docker image
+COPY redditflow.py /app/redditflow.py
+
+# Add any other dependencies or setup steps here if needed
+
+# Define the command to run the Python script with passed arguments
+CMD ["python3", "redditflow.py"]
